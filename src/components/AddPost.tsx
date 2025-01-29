@@ -9,14 +9,21 @@ export default function AddPost() {
     const title = formData.get('title') as string
     const content = formData.get('content') as string
 
-    await prisma.post.create({
+    try {
+      await prisma.post.create({
       data: {
         title,
         content,
-        authorId: 2,
+        slug: title.replace(/\s+/g, '-').toLowerCase() as string,
+        authorId: "679a453251ff00bcca643c5f" as string,
         published: true
-      }
+        }
     })
+    } catch (error) {
+      if (error instanceof Error){
+        console.log("Error: ", error.message)
+    }
+    }
   }
 
 
