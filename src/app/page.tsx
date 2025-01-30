@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from  'next/link';
 
 export default function Home() {
     return (
@@ -31,13 +31,13 @@ export default function Home() {
                     <li>
                         Prisma ORM is an open-source Object-Relational Mapping
                         (ORM) tool designed to simplify database interactions
-                        for developers. It's built using Node.jsand TypeScript,
+                        for developers. Its built using Node.jsand TypeScript,
                         offering features like:
                     </li>
                     <li>
                         Intuitive Data Model: Prisma provides a readable and
                         intuitive data model, making it easier to work with
-                        databases.
+                        databases.                        
                     </li>
                     <li>
                         Automated Migrations: It handles database schema
@@ -92,7 +92,7 @@ export default function Home() {
                         Database Abstraction: ORMs provide a layer of
                         abstraction over the database, making it easier to
                         switch databases if needed. Raw SQL queries are tied to
-                        a specific database's syntax and features, making
+                        a specific database s syntax and features, making
                         migration more challenging.
                     </li>
                     <li>
@@ -107,7 +107,7 @@ export default function Home() {
                         carefully managed.
                     </li>
                     <li>
-                        While there are valid cases for using raw SQL, it's
+                        While there are valid cases for using raw SQL, it s
                         generally better to rely on ORMs for the benefits of
                         security, maintainability, and type safety.
                     </li>
