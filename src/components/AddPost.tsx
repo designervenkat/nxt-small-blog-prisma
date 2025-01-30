@@ -14,7 +14,7 @@ export default function AddPost() {
       data: {
         title,
         content,
-        authorId: '2',
+        authorId: 2,
         published: true
       }
     })
