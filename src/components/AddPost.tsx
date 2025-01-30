@@ -1,4 +1,5 @@
 import prisma from '@/lib/prisma'
+import { revalidatePath } from 'next/cache'
 import Form from 'next/form'
 
 export default function AddPost() {
@@ -13,10 +14,12 @@ export default function AddPost() {
       data: {
         title,
         content,
-        authorId: 2,
+        authorId: '2',
         published: true
       }
     })
+
+    revalidatePath('/blog')
   }
 
 
